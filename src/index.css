@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 33% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 217 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 32 100% 50%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 174 100% 42%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 222 84% 50%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 100% 50%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 32 100% 50%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 215 20% 65%; /* Fixed typo: mute-foreground -> muted-foreground */
+
+    --accent: 174 100% 42%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  .container {
+    @apply px-4 md:px-6 max-w-7xl mx-auto;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gemba-blue text-white font-semibold py-3 px-6 rounded-md hover:bg-blue-600 transition-all shadow-md hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-gemba-orange text-white font-semibold py-3 px-6 rounded-md hover:bg-amber-600 transition-all shadow-md hover:shadow-lg;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .chat-line {
+    @apply my-2 leading-relaxed block; /* Add spacing between paragraphs, improve line spacing, ensure block display */
+  }
+
+  /* Style list items (lines starting with "-") */
+  .chat-line:has(:where(:first-child)) {
+    @apply ml-4; /* Indent list items for better hierarchy */
+  }
+}
