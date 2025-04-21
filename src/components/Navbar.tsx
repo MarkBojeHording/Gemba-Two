@@ -64,17 +64,25 @@ const Navbar = () => {
 
   const navLinks = [
     { title: 'Home', href: '/' },
-    { title: 'About', href: '/#who-we-are' }, // Navigate to homepage and scroll to section
+    { title: 'About', href: '/#who-we-are' },
     { title: 'Contact', href: '#contact' }
   ];
 
   return (
     <>
-      {/* Inject smooth scrolling CSS */}
+      {/* Inject smooth scrolling and touch-friendly CSS */}
       <style>
         {`
           html {
             scroll-behavior: smooth;
+          }
+          .dropdown-link {
+            cursor: pointer;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
+          }
+          .services-dropdown {
+            touch-action: auto;
           }
         `}
       </style>
@@ -171,19 +179,34 @@ const Navbar = () => {
                     size={16}
                     className={`cursor-pointer transform transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`}
                     onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      setServicesDropdownOpen(!servicesDropdownOpen);
+                    }}
                   />
                 </div>
 
                 {servicesDropdownOpen && (
-                  <div className="mt-2 pl-4 space-y-2 border-l-2 border-gemba-blue">
+                  <div className="services-dropdown mt-2 pl-4 space-y-2 border-l-2 border-gemba-blue">
                     {serviceItems.map((item, index) => (
                       <Link
                         key={index}
                         to={item.href}
-                        className="flex items-center py-2 text-gemba-dark hover:text-gemba-blue transition-colors"
+                        className="dropdown-link flex items-center py-2 text-gemba-dark hover:text-gemba-blue transition-colors"
                         onClick={() => {
-                          setMobileMenuOpen(false);
-                          setServicesDropdownOpen(false);
+                          setTimeout(() => {
+                            setMobileMenuOpen(false);
+                            setServicesDropdownOpen(false);
+                          }, 100);
+                        }}
+                        onTouchStart={() => {}}
+                        onTouchEnd={(e) => {
+                          e.preventDefault();
+                          window.location.href = item.href;
+                          setTimeout(() => {
+                            setMobileMenuOpen(false);
+                            setServicesDropdownOpen(false);
+                          }, 100);
                         }}
                       >
                         <span className="mr-2 text-gemba-blue">{item.icon}</span>
