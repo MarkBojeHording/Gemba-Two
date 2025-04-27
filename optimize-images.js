@@ -10,23 +10,27 @@ const imagesToOptimize = [
   {
     filename: 'KPI-image.jpg',
     width: 1920,
-    height: 1080
+    height: 1080,
+    fit: 'cover'
   },
   {
     filename: 'working-together.jpg',
     width: 1920,
-    height: 1080
+    height: 1080,
+    fit: 'cover'
   },
   {
     filename: 'strategy-image.jpg',
     width: 1920,
-    height: 1080
+    height: 1080,
+    fit: 'cover',
+    position: 'top'  // This will keep the top part of the image visible
   },
   {
     filename: 'clients-image.jpg',
     width: 1920,
     height: 1080,
-    fit: 'cover'  // This will ensure the image fills the dimensions while maintaining aspect ratio
+    fit: 'cover'
   }
 ];
 
@@ -47,7 +51,7 @@ async function optimizeImage(imageConfig) {
       .resize(imageConfig.width, imageConfig.height, {
         fit: imageConfig.fit || 'inside',
         withoutEnlargement: true,
-        position: 'center'
+        position: imageConfig.position || 'center'
       })
       .jpeg({
         quality: 80,
