@@ -70,7 +70,7 @@ const KPIPage = () => {
     <ServicePageLayout
       title="KPI Performance Management"
       description="Develop and track the right metrics to drive continuous improvement and ensure sustainable results."
-      imagePath="/gemba-images/KPI-image.jpg"
+      imagePath="/gemba-images/optimized/KPI-image.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}

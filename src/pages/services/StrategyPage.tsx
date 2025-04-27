@@ -40,7 +40,7 @@ const StrategyPage = () => {
     <ServicePageLayout
       title="Strategy: Building a Clear and Comprehensive Roadmap for Success"
       description="Develop a comprehensive lean strategy that aligns with your business goals and drives sustainable improvement."
-      imagePath="/gemba-images/strategy-image.jpg"
+      imagePath="/gemba-images/optimized/strategy-image.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}

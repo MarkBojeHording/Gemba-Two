@@ -70,7 +70,7 @@ const TrainingsPage = () => {
     <ServicePageLayout
       title="Lean Training Programs"
       description="Empower your team with the knowledge and skills to implement and sustain lean processes."
-      imagePath="/gemba-images/working-together.jpg"
+      imagePath="/gemba-images/optimized/working-together.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}

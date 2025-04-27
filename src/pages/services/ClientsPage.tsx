@@ -56,7 +56,7 @@ const ClientsPage = () => {
     <ServicePageLayout
       title="Our Clients"
       description="Discover how organizations across industries have transformed their operations with Gemba's expertise."
-      imagePath="/gemba-images/clients-image.jpg"
+      imagePath="/gemba-images/optimized/clients-image.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}
