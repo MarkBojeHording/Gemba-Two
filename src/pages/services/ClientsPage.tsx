@@ -41,7 +41,7 @@ const ClientsPage = () => {
       quote: "Different tools we can use on daily work, the handout is very useful as well as the assignment task at the end of each session. The samples given were also very relatable to our industry."
     },
     {
-      quote: "Interaction among trainees! A lot of people are willing to volunteer and present their work! Trainer is very positive / respectful of people’s opinions."
+      quote: "Interaction among trainees! A lot of people are willing to volunteer and present their work! Trainer is very positive / respectful of people's opinions."
     },
     {
       quote: "I hierarchically like the assignments everyday and that pushes us to consolidate the knowledge and the sharing to have the opportunity to see what you did was correct and check other examples from colleagues."
@@ -49,14 +49,14 @@ const ClientsPage = () => {
   ];
 
   const handleConsultationClick = () => {
-    window.location.href = "mailto:gembaindonesia@gmail.com?subject=Consultation%20Request%20from%20GEMBA%20Website&body=Hello,%0D%0A%0D%0AI’d%20like%20to%20schedule%20a%20consultation%20to%20discuss%20how%20GEMBA%20can%20help%20improve%20our%20operations.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]";
+    window.location.href = "mailto:gembaindonesia@gmail.com?subject=Consultation%20Request%20from%20GEMBA%20Website&body=Hello,%0D%0A%0D%0AI'd%20like%20to%20schedule%20a%20consultation%20to%20discuss%20how%20GEMBA%20can%20help%20improve%20our%20operations.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]";
   };
 
   return (
     <ServicePageLayout
       title="Our Clients"
       description="Discover how organizations across industries have transformed their operations with Gemba's expertise."
-      imagePath="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      imagePath="/gemba-images/clients-image.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}

@@ -63,19 +63,19 @@ const KPIPage = () => {
   ];
 
   const handleKPIAssessmentClick = () => {
-    window.location.href = "mailto:gembaindonesia@gmail.com?subject=Consultation%20Request%20from%20GEMBA%20Website&body=Hello,%0D%0A%0D%0AI’d%20like%20to%20schedule%20a%20consultation%20to%20discuss%20how%20GEMBA%20can%20help%20improve%20our%20operations.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]";
+    window.location.href = "mailto:gembaindonesia@gmail.com?subject=Consultation%20Request%20from%20GEMBA%20Website&body=Hello,%0D%0A%0D%0AI'd%20like%20to%20schedule%20a%20consultation%20to%20discuss%20how%20GEMBA%20can%20help%20improve%20our%20operations.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]";
   };
 
   return (
     <ServicePageLayout
       title="KPI Performance Management"
       description="Develop and track the right metrics to drive continuous improvement and ensure sustainable results."
-      imagePath="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      imagePath="/gemba-images/KPI-image.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">KPI’s: Monitoring Success and Driving Results</h2>
+          <h2 className="text-3xl font-bold mb-6">KPI's: Monitoring Success and Driving Results</h2>
           <p className="text-lg text-gray-700 mb-4">
             Once your strategy is in place, the next step is to turn it into measurable actions. This is where Key Performance Indicators (KPIs) come into play. KPIs help you track progress and ensure that you're on the right path to achieving your goals.
           </p>
@@ -88,7 +88,7 @@ const KPIPage = () => {
 
           <h3 className="text-xl font-semibold mb-3">Improvement Projects: Fostering a Culture of Continuous Improvement</h3>
           <p className="text-lg text-gray-700 mb-4">
-            Achieving a successful strategy isn’t just about setting goals—it’s about creating a culture of continuous improvement that drives results at every level.
+            Achieving a successful strategy isn't just about setting goals—it's about creating a culture of continuous improvement that drives results at every level.
           </p>
           <p className="text-lg text-gray-700 mb-4">
             At Gemba Indonesia Karya, we guide you through this process, setting up systems to identify and implement improvement initiatives. We ensure that the entire organization—from top management to frontline staff—is trained and equipped to embrace a culture of "never accepting failure".

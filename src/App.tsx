@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,6 +11,7 @@ import ClientsPage from "./pages/services/ClientsPage";
 import KPIPage from "./pages/services/KPIPage";
 import MachineLearningPage from "./pages/services/MachineLearningPage";
 import ChatBotProvider from "./components/chatbot/ChatBotProvider";
+import LogoPage from "./components/LogoPage"; // Fixed relative path
 
 const queryClient = new QueryClient();
 
@@ -29,7 +29,7 @@ const App = () => (
             <Route path="/services/clients" element={<ClientsPage />} />
             <Route path="/services/kpi" element={<KPIPage />} />
             <Route path="/services/machine-learning" element={<MachineLearningPage />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/logo" element={<LogoPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ChatBotProvider>

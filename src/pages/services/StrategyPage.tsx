@@ -33,29 +33,29 @@ const StrategyPage = () => {
   ];
 
   const handleGetStartedClick = () => {
-    window.location.href = "mailto:gembaindonesia@gmail.com?subject=Consultation%20Request%20from%20GEMBA%20Website&body=Hello,%0D%0A%0D%0AI’d%20like%20to%20schedule%20a%20consultation%20to%20discuss%20how%20GEMBA%20can%20help%20improve%20our%20operations.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]";
+    window.location.href = "mailto:gembaindonesia@gmail.com?subject=Consultation%20Request%20from%20GEMBA%20Website&body=Hello,%0D%0A%0D%0AI'd%20like%20to%20schedule%20a%20consultation%20to%20discuss%20how%20GEMBA%20can%20help%20improve%20our%20operations.%20Please%20let%20me%20know%20your%20availability.%0D%0A%0D%0AThanks,%0D%0A[Your%20Name]";
   };
 
   return (
     <ServicePageLayout
       title="Strategy: Building a Clear and Comprehensive Roadmap for Success"
       description="Develop a comprehensive lean strategy that aligns with your business goals and drives sustainable improvement."
-      imagePath="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      imagePath="/gemba-images/strategy-image.jpg"
     >
       <div className="space-y-16">
         {/* Introduction */}
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-lg text-gray-700 mb-4">
-            Many companies claim to have a “strategy,” but often these are just partial elements that lack a cohesive plan for success. You might hear:
+            Many companies claim to have a "strategy," but often these are just partial elements that lack a cohesive plan for success. You might hear:
           </p>
           <ul className="text-lg text-gray-700 list-disc list-inside mb-4 text-left">
-            <li>“Our strategy is to be the low-cost provider.”</li>
-            <li>“We’re pursuing a global strategy.”</li>
-            <li>“Our strategy is to provide unrivaled customer service.”</li>
-            <li>“Our strategy is to move from defense to industrial applications.”</li>
+            <li>"Our strategy is to be the low-cost provider."</li>
+            <li>"We're pursuing a global strategy."</li>
+            <li>"Our strategy is to provide unrivaled customer service."</li>
+            <li>"Our strategy is to move from defense to industrial applications."</li>
           </ul>
           <p className="text-lg text-gray-700 mb-4">
-            While these are valid goals, they don’t represent a complete, actionable strategy. A true strategy integrates all the critical components needed to drive long-term success.
+            While these are valid goals, they don't represent a complete, actionable strategy. A true strategy integrates all the critical components needed to drive long-term success.
           </p>
           <p className="text-lg text-gray-700 mb-4">
             At Gemba Indonesia Karya, we present a comprehensive framework for strategy design, answering five crucial questions that guide organizations towards meaningful transformation:
